@@ -1,2 +1,17 @@
 //anotações cadastro pessoas
 
+1 - Criando o banco de dados caso ele não exista e configurar a linguagem para receber caracteres especiais:
+
+create DATABASE if NOT EXISTS db_cadastro DEFAULT CHARACTER SET utf8 DEFAULT COLLATE utf8_general_ci; 
+
+2 - criar as tabelas do db_cadastro com os campos:
+create TABLE if not EXISTS tb_clientes(
+id int AUTO_INCREMENT not null PRIMARY KEY,
+nome varchar(40) not null,
+email varchar(50) not null UNIQUE,
+telefone varchar(15) not null
+) default CHARACTER set utf8 DEFAULT COLLATE utf8_general_ci;
+
+3 - padronizando e iniciando o seu projeto.
+3.1 - Para padronizar e facilitar o frontend, vamos usar o materialize muito parecido com o bootstrap
+
