@@ -11,10 +11,10 @@
         include_once 'banco_de_dados/conexao.php';
 
         $id = filter_input( INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT );
+        $_SESSION['id'] = $id;
         $querySelect = $link -> query( "select * from tb_clientes where id='$id'" );
 
         while( $registro = $querySelect -> fetch_assoc() ) {
-            $id = $registro['id'];
             $nome = $registro['nome'];
             $email = $registro['email'];
             $telefone = $registro['telefone'];
@@ -52,8 +52,11 @@
 
                 <!-- Button -->
                 <div class="input-field col 12">
-                    <input type="submit" value="alterar" class="btn blue">
-                    <a href="consultas.php" class="btn red">cancelar</a>
+                    
+                    <button class="btn waves-effect waves-light blue" type="submit" name="action">alterar
+                        <i class="material-icons right">save</i>
+                    </button>
+                    <a href="consultas.php" class="waves-effect waves-light btn red"><i class="material-icons right">clear</i>cancelar</a>
                 </div>
             </fieldset>
         </form>

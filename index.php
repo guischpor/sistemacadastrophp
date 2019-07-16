@@ -43,8 +43,13 @@
 
                 <!-- Button -->
                 <div class="input-field col 12">
-                    <input type="submit" value="cadastrar" class="btn blue">
-                    <input type="reset" value="limpar" class="btn red">
+                    
+                    <button class="btn waves-effect waves-light blue" type="submit" name="action">cadastrar
+                        <i class="material-icons right">save</i>
+                    </button>
+                    <button class="btn waves-effect waves-light red" type="reset" name="action">limpar
+                        <i class="material-icons right">clear</i>
+                    </button>
                 </div>
             </fieldset>
         </form>
