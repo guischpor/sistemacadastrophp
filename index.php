@@ -24,7 +24,14 @@
     </nav>
 
     <!-- Formulário de Cadastro -->
-    
+    <div class="row container">
+        <p>&nbsp;</p>
+        <form action="banco_de_dados/create.php" method="post" class="col s12">
+            <fieldset class="formulario">
+                <legend>Cadastro</legend>
+            </fieldset>
+        </form>
+    </div>
 
         
 
