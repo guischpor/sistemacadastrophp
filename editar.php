@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+<?php session_start() ?>
 <?php include_once 'includes/header.inc.php' ?>
     <?php include_once 'includes/menu.inc.php' ?>
 
@@ -57,6 +57,7 @@
                         <i class="material-icons right">save</i>
                     </button>
                     <a href="consultas.php" class="waves-effect waves-light btn red"><i class="material-icons right">clear</i>cancelar</a>
+
                 </div>
             </fieldset>
         </form>
